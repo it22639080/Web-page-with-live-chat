@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Play:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: "Play", sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+
+}
+body::-webkit-scrollbar-track{
+    background-color: #afaace;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #4e3acb;
+    border-radius: 10px;
+    
+}
+.navbar-brand img{
+    height: 50px;
+   
+}
+.nav-item{
+    border-bottom:3px solid transparent;
+}
+.nav-item:hover{
+    cursor: pointer;
+    color: #FF5C1C;
+    border-color:  #FF5C1C;
+    border-radius: 15px;
+}
+.back-to-top-outer{
+    width: 50px;
+    height: 50px;
+    background-color: #d35400;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 3px;
+    box-shadow:  4px 4px 4px #333;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.back-to-top-outer a{
+    width: 50px;
+    height: 50px;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+.fa-solid{
+    font-size: 18px;
+    color: aliceblue;
+}
+.outer{
+    width: 100%;
+    height: 400px;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home area */
+.home-outer{
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://img.freepik.com/free-photo/office-table-with-cup-coffee-keyboard-notepad_1220-4584.jpg?t=st=1731935277~exp=1731938877~hmac=629acca1958cac9471c3a3797d799d0d600c5f1991555a935e8d60d4de0b4f53&w=1060');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.header-outer{
+    position: sticky;
+    top: 0;  
+    z-index: 1;
+     /* navigation bar eka ethanma thiyanna me code ekem puluwn */ 
+}
+.tittle-text{
+    color: white;
+
+}
+.home-container{
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.header-text{
+    font-weight: 500;
+    font-size: 50px;
+    color: white;
+    line-height: 48px;
+}
+.home-widget-outer{
+    
+   
+    margin-top: -100px;
+}
+.widget-outer{
+    height: 300px;
+     margin-bottom: 20px;
+
+}
+.widget-inner{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    display:flex ;
+    flex-direction: column;
+}
+.widget-inner-top{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.widget-inner-bottum{
+    /* border: 1px solid red; */
+    flex: 1;
+    padding: 15px;
+
+}
+.widget-icon{
+    width: 80px;
+    height: 80px;
+    background-color: #FE214F;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.widget-icon svg{
+    width: 80%;
+    height: 80%;
+}
+.widget-header{
+    text-align: center;
+}
+.widget-des{
+    text-align: center;
+
+
+}
+
+/* Service area */
+.service-outer{
+ min-height: 750px;
+
+ width: 100%; 
+ background-image: url('https://img.freepik.com/free-photo/business-owner-working-their-strategy_23-2149241315.jpg?t=st=1731987341~exp=1731990941~hmac=1b47befbc9535f2e50c6eda84ad23d75bfe40b03a014f9573a7d0ae06182a179&w=1060');  
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left;
+}
+.service-container{
+    min-height:750px;
+    
+
+}
+.row{
+    height: 100%;
+}
+.service-container-inner{
+    height: 100%;
+}
+.service-right-side{
+    min-height:750px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+
+}
+.right-top{
+    height: 250px;
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+   
+}
+.right-top:last-child{
+    margin-bottom: 0;
+}
+.right-bottom{
+    height: 250px;
+    background-color: white;
+    
+}
+   
+.service-top-tittle{
+    color: #FE214F;
+
+}
+.service-top-desc{
+    margin-top: 20px;
+}
+.service-grid-outer{
+    width: 100%;
+    height:auto;
+    
+
+}
+.service-grid-inner{
+    height: 420px;
+    margin-bottom: 15px;
+    background-color:#1A1A1A ;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.grid-1{
+    height: 420px;
+    ;
+    background-image: url('https://img.freepik.com/free-photo/professional-young-woman-posing-office_23-2148452650.jpg?t=st=1731987158~exp=1731990758~hmac=4719768f13d3e44192170b9652c62df0b7090a133ee63d5885f48836b2fddfdb&w=1060');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-3{
+    height: 420px;
+    
+    background-image: url('https://img.freepik.com/free-photo/close-up-person-relaxing-break-time_23-2149256902.jpg?t=st=1731987304~exp=1731990904~hmac=23adeac60796df59272154688348c535b2968bfc41ac61a03c7bb082015bed34&w=1060');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-grid-tittle,link{
+    color: rgb(151, 8, 8);
+}
+.service-grid-header{
+    color: white;
+}
+.desc-ser{
+    color: white;
+}
+
+/* About page */
+
+.about-outer{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+.about-outer img{
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);   /*can blur image */
+}
+.dark-shadow-outer{
+    background-color:rgba(19, 15, 64,0.5);;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-content{
+    width:600px;
+    height: 70%;
+    border: 1px solid white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+   }
+.about-tittle{
+    color: #FE214F;
+    text-align: center;
+}
+.about-desc{
+    color: white;
+    text-align: center;
+}
+
+/* countact us  */
+
+.contact-outer{
+    width:100%;
+    height:auto;
+    background-color: #000;
+    padding: 50px 0;
+    
+
+
+}
+.contact-inner{
+    display: flex;
+    height: 100%;
+}
+.contact-left{
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.contact-right{
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    
+}
+@media only screen and(max-width:992px){
+    .contact-inner{
+        display: block;
+    }
+    .contact-left,.contact-right{
+        height: 500px;
+    }
+    .contact-outer{
+        height: 1000px;
+    }
+}
+.email, .contacts, .address, .header-tittle{
+    color: white;
+}
+
+/* product Area */
+.product-outer{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+.product-tittle{
+    text-align: center;
+    color: #FE214F;
+}
+.product-header{
+    text-align: center;
+}
+.product-wrapper{
+    margin-bottom: 10px;
+    
+}
+.product-inner{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+ .feature-outer{
+   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .feature-tittle{
+    color: #FE214F;
+
+ }
+ .feature-outer ol{
+    padding: 0;
+    margin: 25px;
+}
+.feature-outer ol li{
+ font-style: italic;
+}
+.feature-right img{
+    margin-top: 20px;
+    width: 100%;
+}
+.feature-wrapper{
+    
+    display: flex;
+    justify-content: center;
+
+}
+/* solution Area */
+.solution-outer{
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    background-image: url('https://img.freepik.com/free-photo/office-table-with-gadgets_23-2147833291.jpg?t=st=1732016914~exp=1732020514~hmac=21344ef0bea8b814349f15ee0578ebdba5e37d05deaef3618696904884d75bfa&w=1060');
+    background-position: right;
+    background-size: cover;
+    padding: 50px 0;
+}
+.solution-tittle{
+    color: #FE214F;
+}
+.solution-data-context{
+    margin-bottom: 50px;
+}
+
+/* footer area */
+
+
+.footer{
+    background-color: #333;
+    width: 100%;
+    height: 400px;
+    padding: 50px 0;
+
+}
+.footer-tittle, .footer-desc{
+    text-align: center;
+    color: white;
+}
